@@ -1,0 +1,783 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }  
+@font-face {
+    font-family: "Flexo-Medium"; /*style de police du site*/
+    src: url(polices/Flexo-Medium/Flexo-Medium.ttf) format("truetype");
+}
+
+/*↓ FOOTER ↓*//*↓ FOOTER ↓*//*↓ FOOTER ↓*//*↓ FOOTER ↓*//*↓ FOOTER ↓*//*↓ FOOTER ↓*//*↓ FOOTER ↓*//*↓ FOOTER ↓*/
+footer {
+    background-color: #187498;
+    height: 200px;
+    width: auto;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pagesinterne {
+    display: flex;
+    flex-direction: column;
+}
+.pagesinterne a {
+    color: white;
+    width: 120%;
+    height: 100%;
+}
+#reseaux {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+#autres-Fansite a {
+    color: white;
+}
+#reseaux img {
+    margin-top: 15%;
+    width: auto;
+    height: 50px;
+}
+.droits {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+.droits a {
+    color: white;
+}
+/*↑ FOOTER ↑*//*↑ FOOTER ↑*//*↑ FOOTER ↑*//*↑ FOOTER ↑*//*↑ FOOTER ↑*//*↑ FOOTER ↑*//*↑ FOOTER ↑*//*↑ FOOTER ↑*/
+
+/*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*//*↓ HOME ↓*/
+.BodyHome {
+    border: solid;
+    width: auto;
+    height: auto; 
+    background-image: url('images/Background-2.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(10px); 
+}
+.navbar {
+    position: relative;
+    background-image: url('images/bande_déco-removebg-preview.png');
+    background-position: center center;
+    background-repeat: repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-right: 0%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+}
+.liens-recherche {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.recherche {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+#barrerecherche {
+    border-radius: 10px;
+    opacity: 80%;
+    box-shadow: 0 0 1px #dc51ff, 0 0 2px #dc51ff, 0 0 6px #dc51ff, 0 0 12px #dc51ff, inset 0 0 1px #dc51ff, inset 0 0 2px #dc51ff, inset 0 0 6px #dc51ff, inset 0 0 12px #dc51ff;
+}
+.liens {
+    width: auto;
+}
+.liens a {
+    padding: -5%;
+    color: black;
+}
+#imageButton {
+    cursor: pointer;
+    position: relative;  
+}
+#imageButton #pika {
+    box-shadow: 0 0 1px #f4c303, 0 0 2px #f4c303, 0 0 6px #f4c303, 0 0 12px #f4c303, inset 0 0 1px #f4c303, inset 0 0 2px #f4c303, inset 0 0 6px #f4c303, inset 0 0 12px #f4c303;
+    border-radius: 50%;
+}
+#pika {
+    transition: transform 2s;
+}
+#pika:hover {
+    transform: rotate(360deg);
+}
+#imageButton #bulbi {
+    box-shadow: 0 0 1px #51ff65, 0 0 2px #51ff65, 0 0 6px #51ff65, 0 0 12px #51ff65, inset 0 0 1px #51ff65, inset 0 0 2px #51ff65, inset 0 0 6px #51ff65, inset 0 0 12px #51ff65;
+    border-radius: 50%;
+}
+#bulbi {
+    transition: transform 2s;
+}
+#bulbi:hover {
+    transform: rotate(360deg);
+}
+#imageButton #salam {
+    box-shadow: 0 0 1px #fa7602, 0 0 2px #fa7602, 0 0 6px #fa7602, 0 0 12px #fa7602, inset 0 0 1px #fa7602, inset 0 0 2px #fa7602, inset 0 0 6px #fa7602, inset 0 0 12px #fa7602;
+    border-radius: 50%;
+}
+#salam {
+    transition: transform 2s;
+}
+#salam:hover {
+    transform: rotate(360deg);
+}
+#imageButton #psyko {
+    box-shadow: 0 0 1px #02b0fa, 0 0 2px #02b0fa, 0 0 6px #02b0fa, 0 0 12px #02b0fa, inset 0 0 1px #02b0fa, inset 0 0 2px #02b0fa, inset 0 0 6px #02b0fa, inset 0 0 12px #02b0fa;
+    border-radius: 50%;
+}
+#psyko {
+    transition: transform 2s;
+}
+#psyko:hover {
+    transform: rotate(360deg);
+}
+#imageButton #ronflex {
+    box-shadow: 0 0 1px #586b72, 0 0 2px #586b72, 0 0 6px #586b72, 0 0 12px #586b72, inset 0 0 1px #586b72, inset 0 0 2px #586b72, inset 0 0 6px #586b72, inset 0 0 12px #586b72;
+    border-radius: 50%;
+}
+#ronflex {
+    transition: transform 2s;
+}
+#ronflex:hover {
+    transform: rotate(360deg);
+}
+#scrollingText {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: unset;
+    padding: 0px;
+    border: none;
+}
+#imageButton:hover #scrollingText {
+    max-height: 1000%; 
+}
+.logo img {
+    width: 100px;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+    transition: transform 2s;
+}
+.logo img:hover {
+    transform: scale(1.2);
+}
+#affichePokemon {
+    display: flex;
+    justify-content: center;
+}
+#affichePokemon img {
+    width: 30%;
+    height: auto;
+}
+.corp1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#attrapez {
+    margin: 0;
+    padding: 5%;
+    width: 75%;
+}
+#presentation1 {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+#presentation2 {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+#presentation3 {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+#dracaufeu {
+    width: 40%;
+}
+.corp2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.video {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.GameBoyVideo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#GameBoy {
+    width: 73%;
+    height: auto;
+    top: 0;
+    left: 0; 
+    z-index: 0;
+}
+#video-container {
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    top: 36px;
+    left: 114px; 
+    z-index: 1;
+}
+#video-container video {
+    width: 300px;
+    height: 230px;
+    border-radius: 15px;
+  }
+#Psykokwak {
+    height: 30%;
+    width: 38%;
+}
+#titrepersonnages {
+    text-align: center;
+    font-family: 'Flexo-Medium', arial, sans-serif;    
+}
+.imageperso {
+    display: flex;
+    justify-content: space-around;
+}
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+@keyframes changementcouleur {
+    20%   {box-shadow: 5px 5px 15px red;}
+    40%  {box-shadow: 5px 5px 10px yellow;}
+    60%  {box-shadow: 5px 5px 15px green}
+    80% {box-shadow: 5px 5px 10px blue}
+    100% {box-shadow: 5px 5px 15px purple}
+}
+.histoire {
+    font-family: 'Flexo-Medium', arial, sans-serif;
+}
+#imgSacha {
+    animation-name: changementcouleur;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#imgOndine {
+    animation-name: changementcouleur;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#imgPierre {
+    animation-name: changementcouleur;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.nomsperso {
+    display: flex;
+    justify-content: space-between;
+    width: 96.2%; 
+}
+.presentationperso {
+    display: flex;
+    justify-content: space-around;
+}
+#presentSacha {
+    border-top: 3px #EB5353 dotted;
+    border-right: 3px #F9D923 double;
+    border-bottom: 3px #36AE7C dashed;
+    border-left: 3px #187498 solid;
+    background-color: rgb(221, 175, 175);
+    border-radius: 15px;
+    padding: 1%;
+    margin: 1%;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    text-align: center;
+}
+#presentOndine {
+    border-top: 3px #EB5353 dotted;
+    border-right: 3px #F9D923 double;
+    border-bottom: 3px #36AE7C dashed;
+    border-left: 3px #187498 solid;
+    background-color: rgb(218, 221, 175);
+    border-radius: 15px;
+    padding: 1%;
+    margin: 1%;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    text-align: center;
+}
+#presentPierre {
+    border-top: 3px #EB5353 dotted;
+    border-right: 3px #F9D923 double;
+    border-bottom: 3px #36AE7C dashed;
+    border-left: 3px #187498 solid;
+    background-color: rgb(146, 157, 237);
+    border-radius: 15px;
+    padding: 1%;
+    margin: 1%;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    text-align: center;
+}
+.Team-Rocket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Flexo-Medium', arial, sans-serif;
+}
+.Team-Rocket img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 2%;
+    animation-name: changementcouleur;
+    animation-duration: 8s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#presentTeamRocket {
+    border-top: 3px #EB5353 dotted;
+    border-right: 3px #F9D923 double;
+    border-bottom: 3px #36AE7C dashed;
+    border-left: 3px #187498 solid;
+    background-color: rgb(231, 146, 237);
+    border-radius: 15px;
+    text-align: center;
+}
+/*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*//*↑ HOME ↑*/
+
+/*↓ MAP KANTO ↓*//*↓ MAP KANTO ↓*//*↓ MAP KANTO ↓*//*↓ MAP KANTO ↓*//*↓ MAP KANTO ↓*//*↓ MAP KANTO ↓*//*↓ MAP KANTO ↓*//*↓ MAP KANTO ↓*/
+.BodyKanto {
+    background-image: url('images/illustration-pokemon-grotte-aquatique.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(10px); 
+}
+.corpKanto {
+    font-family: 'Flexo-Medium', arial, sans-serif;
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Pikachurun-titre {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#titre-Kanto {
+    top: 0;
+    left: 0; 
+    z-index: 1;
+}
+#Pikachurun{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    animation: allerRetour 12s linear infinite; /* Animation pour les allers-retours */
+    transform-origin: center; /* Point de rotation au centre de l'élément */
+}
+@keyframes allerRetour {
+    0% {
+        left: 0; /* Position de départ (à gauche) */
+        transform: scaleX(1); /* Échelle normale */
+    }
+    25% {
+        left: 91%; /* Position à mi-chemin à droite */
+        transform: scaleX(1); /* Échelle normale */
+    }
+    50% {
+        left: 91%; /* Position finale (à droite) */
+        transform: scaleX(-1); /* Inversion horizontale */
+    }
+    75% {
+        left: 0; /* Position à mi-chemin à gauche */
+        transform: scaleX(-1); /* Inversion horizontale */
+    }
+    100% {
+        left: 0; /* Position finale (à gauche) */
+        transform: scaleX(1); /* Échelle normale */
+    }
+}
+.Kanto {
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Kanto2d {
+    border: solid;
+    height: auto;
+    border-radius: 15px;
+    animation-name: changementcouleur;
+    animation-duration: 8s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#Villesimportantes {
+    margin-bottom: 3%;
+}
+.titre-photo-Celadopole {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#Celadopole {
+    text-align: center;
+}
+.titre-photo-Safrania {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+} 
+#Safrania {
+    text-align: c
+    enter;
+}
+.titre-photo-Mont-Selenite {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+} 
+#Mont-Selenite {
+    text-align: center;
+}
+.titre-photo-Les-îles-écumes {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row
+} 
+#Les-îles-écumes {
+    text-align: center;
+}
+.titre-photo-Route-Victoire{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+} 
+#RouteVictoire {
+    text-align: center;
+}
+.titre-photo-Plateau-Indigo{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+} 
+#PlateauIndigo {
+    text-align: center;
+}
+.imagesbadges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}
+.imagesbadges img {
+    margin-top: 2%;
+    height: 50px;
+    width: auto;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg); /* Angle initial de rotation (0 degré) */
+    }
+    to {
+        transform: rotateY(360deg); /* Angle final de rotation (360 degrés) */
+    }
+}
+#areneArgenta{
+    border: solid;
+    background-image: url('images/map/arene/MotifPierre.jpg');
+    background-position: 15% 50%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(215, 170, 170);
+} 
+#areneAzuria{
+    border: solid;
+    background-image: url('images/map/arene/MotifEau.jpg');
+    background-size: cover;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(0, 13, 255);
+} 
+#areneCarminsurMer{
+    border: solid;
+    background-image: url('images/map/arene/MotifFoudre.png');
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(242, 255, 0);
+}
+#areneCeladopole{
+    border: solid;
+    background-image: url('images/map/arene/MotiPlante.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 1%;
+    background-color: rgb(20, 143, 4);
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(128, 255, 0);
+}
+#areneParmanie{
+    border: solid;
+    background-image: url('images/map/arene/MotiFumee.png');
+    background-size: cover;
+    background-position: 1%;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(175, 8, 226);
+}
+#areneSafrania{
+    border: solid;
+    background-image: url('images/map/arene/MotifPsy.png');
+    background-size: cover;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: pink;
+}
+#areneCramoisIle{
+    border: solid;
+    background-image: url('images/map/arene/MotifVolcan.jpg');
+    background-size: cover;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: red;
+}
+#areneJadielle{
+    border: solid;
+    background-image: url('images/map/arene/MotifTerre.png');
+    background-size: cover;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(253, 109, 109);
+}
+/*↑ MAP KANTO ↑*//*↑ MAP KANTO ↑*//*↑ MAP KANTO ↑*//*↑ MAP KANTO ↑*//*↑ MAP KANTO ↑*//*↑ MAP KANTO ↑*//*↑ MAP KANTO ↑*//*↑ MAP KANTO ↑*/
+
+
+/*↓ POKEDEX ↓*//*↓ POKEDEX ↓*//*↓ POKEDEX ↓*//*↓ POKEDEX ↓*//*↓ POKEDEX ↓*//*↓ POKEDEX ↓*//*↓ POKEDEX ↓*//*↓ POKEDEX ↓*/
+.BodyPokedex {
+    background-image: url('images/Background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(10px); 
+}
+.corpPokedex {
+    height: 700px;
+}
+#Pokedex {
+    margin-top: 10%;
+    position: absolute;
+    z-index: 1;
+    left:310px;
+    top: 85px;
+} 
+.slideshow-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 12%;
+    position: relative;
+    height: 0;
+    padding-bottom: 38%;
+    user-select: none;
+    border-radius:10px ; 
+}
+.slideshow-container .slide_img{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;;
+    height: 100%;
+}
+.slide_img {
+    display: flex;
+    justify-content: space-between;
+}
+.descriptionpoke {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide_img img{
+    width: auto;
+    height: 35%;
+}
+.detailpoke {
+    width: 300px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.prev, .next{
+    border: solid;
+    width: 12%;
+    height: inherit;
+    position: absolute;
+    top:0; 
+    background-color: rgba(88, 88, 88,.2);
+    color:rgba(244, 244, 244,.9);
+    opacity: 50%;
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+}
+.next{
+    right:0;
+}
+.prev{
+    left:0;
+}
+label span{
+    position: absolute;
+    font-size: 100pt;
+    top: 50%;
+     transform: translateY(-50%);
+}
+.container #nav_slide{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+	cursor: default;
+}
+.slide_img{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four ,
+	#i5:checked ~ #five ,
+    #i6:checked ~ #six ,
+    #i7:checked ~ #seven ,
+    #i8:checked ~ #eight ,
+    #i9:checked ~ #nine ,
+    #i10:checked ~ #ten ,
+    #i11:checked ~ #eleven ,
+    #i12:checked ~ #twelve ,
+    #i13:checked ~ #thirteen  
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+@keyframes scroll{
+	0%{	opacity:.4;}
+	100%{opacity:1;}
+}
+/*↑ POKEDEX ↑*//*↑ POKEDEX ↑*//*↑ POKEDEX ↑*//*↑ POKEDEX ↑*//*↑ POKEDEX ↑*//*↑ POKEDEX ↑*//*↑ POKEDEX ↑*//*↑ POKEDEX ↑*/	
+
+/*↓ NEWS ↓*//*↓ NEWS ↓*//*↓ NEWS ↓*//*↓ NEWS ↓*//*↓ NEWS ↓*//*↓ NEWS ↓*//*↓ NEWS ↓*//*↓ NEWS ↓*/
+.BodyNews {
+    background-image: url('images/BackgroundNews.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    height: auto;
+    font-family: 'Flexo-Medium', arial, sans-serif; 
+}
+.fenêtreinfo {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+#byebyesacha {
+    width: 50%; 
+    height: auto;
+}
+#byebyesacha iframe {
+    width: 99%; 
+    height: 80%;
+}
+#actus-lesaviezvous {
+    width: 50%; 
+    height: auto;
+}
+#actus-lesaviezvous iframe {
+    width: 99%; 
+    height: 80%;
+}
+/*↑ NEWS ↑*//*↑ NEWS ↑*//*↑ NEWS ↑*//*↑ NEWS ↑*//*↑ NEWS ↑*//*↑ NEWS ↑*//*↑ NEWS ↑*//*↑ NEWS ↑*/
+
+/*↓ CONTACT ↓*//*↓ CONTACT ↓*//*↓ CONTACT ↓*//*↓ CONTACT ↓*//*↓ CONTACT ↓*//*↓ CONTACT ↓*//*↓ CONTACT ↓*/
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+#message {
+    width: 30%;
+    height: 30%;
+}
